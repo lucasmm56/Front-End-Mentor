@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca:wght@100;200;300;400&family=Montserrat:wght@100;500;700&family=Overpass:wght@100;400&family=Poppins:ital,wght@0,200;0,400;0,700;1,500&family=Red+Hat+Display:wght@500;900&display=swap');
+
+:root{
+    --Dark_cyan: hsl(185, 75%, 39%);
+    --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+    --Dark_grayish_blue: hsl(227, 10%, 46%);
+    /* Neutral */
+    --Dark_gray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark_cyan);
+}
+.images_bg_top{
+    width: 820px;
+    height: 1000px;
+    position: absolute;
+    top: -97%;
+    left: -10%;
+    overflow:hidden;
+}
+.images_bg_bootom{
+    width: 1044px;
+    height: 1044px;
+    position: absolute;
+    top: 55%;
+    bottom: 0;
+    right: -25%;
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.info_center{
+    text-align: center;
+    margin-top: -3em;
+    background-color: white;
+}
+.insta_row{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 1em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+.victor_img{
+    border: 5px solid white ;
+    border-radius: 50%;
+}
+
+.name{
+    font-weight: 700;
+    margin-top: 1em;
+    color: var(--Very_dark_desaturated_blue);
+}
+span{
+    color: var(--Dark_gray);
+    font-weight: 400;
+}
+.london{
+    color: var(--Dark_gray);
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    font-weight: 400;
+}
+hr{
+    margin-top: 1.5em;
+    border: 0 none #D6D6D6;
+    border-bottom: 1px solid white;
+    border-top: 1px solid #D6D6D6;
+}
+
+.insta_info{
+    text-align: center;
+    margin-left: 1.7em;
+    margin-right: 1.7em;
+}
+h3{
+    color: var(--Very_dark_desaturated_blue);
+}
+.insta_texts{
+    font-size: 0.7em;
+    font-weight: 400;
+    color: var(--Dark_gray);
+    letter-spacing: 0.1em;
+}
+svg{
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); position: relative;}
+
+
+@media screen and (max-width:414px) {
+    .images_bg_top{
+        width:100%;
+        top: -70%;
+        left:-25%;
+    }
+    .images_bg_bootom{
+        width: 100%;
+        height: auto;
+        right: -60%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .images_bg_top{
+        width:80%;
+        top: -120%;
+    }
+    .images_bg_bootom{
+        width: 90%;
+        height: auto;
+    }
+}
+

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@100;500;700&family=Overpass:wght@100;400&family=Poppins:ital,wght@0,200;0,400;0,700;1,500&family=Red+Hat+Display:wght@500;900&display=swap');
+:root{
+    /* Primary */
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --button_hover: hsl(154, 97%, 76%);
+    /* Accent */
+    --blue:hsl(248, 32%, 49%);
+    /* Neutral */
+    --dark-blue:hsl(249, 10%, 26%);
+    --grayish-blue:  hsl(246, 25%, 77%);
+}
+body{
+    margin: 0;
+    background-image: url(../images/bg-intro-desktop.png);
+    background-color: var(--red);
+    color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 4em;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.texts{
+    width: 25em;
+}
+.texts h1{
+    font-weight:700;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+.texts p{
+    font-size: 0.8em;
+    font-weight:400;
+    line-height: 1.8em;
+}
+.formulario{
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7em;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    border-color: var(--dark-blue);
+    padding: 1.5em 1.5em;
+    background-color: white;
+    margin-top: 2em;
+    box-shadow: 0px 10px 13px -7px #000000, 0px 5px 14px 0px rgba(0,0,0,0);
+}
+.input{
+    height: 3em;
+    margin-bottom: 0.9em;
+    font-weight: 500;
+    font-family: 'Poppins';
+    border:1px solid var(--grayish-blue);
+    border-radius: 0.2em;
+    display: flex;
+    flex-direction: row;
+}
+.input input{
+    outline: none;
+    width: 100%;
+    border-radius: 0.2em;
+    border: none;
+    padding-left: 2em;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+.icon_error{
+    display: none;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid  var(--blue);
+}
+
+.button-top{
+    height: 4em;
+    width: 100%;
+    background-color: var(--blue);
+    border-radius: 0.5em;
+    border: none;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 11px;
+    padding-top: 2em;
+    box-shadow: 0px 10px 13px -7px #000000, 0px 5px 14px 0px rgba(0,0,0,0);
+}
+.button-bold{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.button-bottom{
+    height: 4em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: var(--green);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 10px 13px -7px #000000, 0px 5px 14px 0px rgba(0,0,0,0);
+}
+
+.button-bottom:hover{
+    background-color: var(--button_hover);
+}
+.small-text{
+    color: var(--grayish-blue);
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 2em;
+    text-align: center;
+}
+.terms{
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 700;
+}
+footer{
+    text-align: center;
+}
+
+.message__error{
+    display: none;
+}
+
+@media screen and (max-width:1180px) {
+    .formulario{
+        padding-left: 1em;
+    }
+
+}
+@media screen and (max-width:1060px) {
+    main{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+    main{
+        height: 130vh;
+    }
+    section{
+     width: 90%;
+    }
+    .texts{
+     text-align: center;
+    }
+    footer{
+     margin: 3em 0;
+    }
+ }

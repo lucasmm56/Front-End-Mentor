@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@100;500;700&family=Overpass:wght@100;400&family=Red+Hat+Display:wght@500;900&display=swap');
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --Dark_Blue: hsl(213, 19%, 18%);
+    --Very_Dark_Blue: hsl(216, 12%, 8%);
+    --button: hsl(215, 20%, 25%);
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very_Dark_Blue);
+    background-repeat: no-repeat;
+}
+
+.page1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 {
+    width: 22em;
+    background-color: var(--Dark_Blue);
+    align-items: center;
+    padding: 2em;
+    border-radius: 25px;
+}
+.star{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: var(--button);
+}
+.icon{
+    margin-top: 1em;
+    margin-left: 0.9em;
+}
+
+.title{
+    color: var(--White);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+.text{
+    color: var(--White);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 100;
+    
+}
+
+.numbers{
+    display: flex;
+    flex-direction: row;
+    margin-left: -20px;
+}
+
+.btn {
+    height: 3.2em;
+    width: 3.2em;
+    border-radius: 50%;
+    background-color: var(--button);
+    text-align: center;
+    margin-left: 1.9em;
+    color: var(--Medium_Grey);
+    border: none;
+    align-items: center;
+    margin-top: 1em;
+}
+.btn:hover {
+    background-color: var(--Orange);
+    color:var(--White);
+    cursor: pointer;
+}
+.btn:focus{
+    background-color: var(--Medium_Grey);
+    color: var(--White);
+}
+
+.button{
+    width: 20rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    background-color: var(--Orange);
+    margin: 0%;
+    cursor: pointer;
+    color: var(--White);
+    text-transform: uppercase;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+    border: none;
+    margin-top: 2em;
+}
+
+.button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.page2{
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-thank-you{
+    padding-bottom: 2em;
+}
+.selected{
+    width: 11rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5em;
+    color: var(--Orange);
+    border-radius: 1.5em;
+    background-color: var(--button);
+    padding-left: 2em;
+    height: 2em;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 1em;
+    margin-bottom: 3em;
+}
+#demo{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.section2 {
+    width: 22em;
+    background-color: var(--Dark_Blue);
+    align-items: center;
+    padding: 2em;
+    border-radius: 25px;
+    text-align: center;
+    color: var(--White);
+}
+.text-thank{
+    font-size: 0.97em;
+    color: var(--Light_Grey);
+}
+
+@media(max-width:410px){
+    
+    .section1{
+        width: 19em;
+    }
+    .button{
+        width: 21em;
+    }
+    .section2{
+        width: 19em; 
+    }
+}
