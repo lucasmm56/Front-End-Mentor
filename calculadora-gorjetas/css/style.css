@@ -39,6 +39,10 @@ section{
     padding: 2em 2em;
 }
 
+input{
+    outline-color: var(--Strong-cyan);
+}
+
 label{
     display: block;
     color: var(--Very-dark-cyan);
@@ -64,20 +68,6 @@ button, .input_custom{
     font-family: 'Space Mono';
 }
 
-.custom{
-    background-color: var(--Very-light-grayish-cyan);
-    border: none;
-    width: 100%;
-    height: 100%;
-}
-.custom::placeholder{
-    text-align: right;
-    font-family: 'Space Mono';
-    font-size: 1.5em;
-    color: var(--Very-dark-cyan);
-    font-weight: 700;
-}
-
 .input_dolar, .input_peoples{
     display: flex;
     flex-direction: row;
@@ -94,7 +84,7 @@ button, .input_custom{
     color: red;
 }
 
-.input_dolar input, .input_peoples input{
+.input_dolar input, .input_peoples input, .input_custom input{
     width: 100%;
     height: 2em;
     border: none;
@@ -105,6 +95,13 @@ button, .input_custom{
     color: var(--Very-dark-cyan);
     font-weight: 700;
     font-size: 1.2em;
+}
+.custom::placeholder{
+    text-align: right;
+    font-family: 'Space Mono';
+    font-size: 1em;
+    color: var(--Very-dark-cyan);
+    font-weight: 700;
 }
 
 input[type=text]{

@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
       font-size: 11px;
@@ -58,14 +57,16 @@
             <p>Tip Amount</p>
             <span>/ person</span>
           </div>
-          <h2 id="gorjeta_person">$</h2>
+          <h2 id="gorjeta_null">$0:00</h2>
+          <h2 id="gorjeta_person"></h2>
         </div>
         <div class="total">
           <div class="total_person">
             <p>Total</p>
             <span>/ person</span>
           </div>
-          <h2 id="total_people">$</h2>
+          <h2 id="result_null">$0:00</h2>
+          <h2 id="total_people"></h2>
         </div>
         <button class="btn_clear" onclick="reset()">Reset</button>
       </div>
