@@ -24,12 +24,16 @@
 
 <body>
   <main>
+    <div class="title_page">
+      <h1>SPLITTER</h1>
+    </div>
     <section>
-      <label for="conta">Bill</label>
-      <div class="input_dolar">
-        <input type="text" name="conta" id="conta" onchange="getValueConta()" placeholder="0">
-        <img src="images/icon-dollar.svg" alt="icon-dolar">
-      </div>
+      <article>
+        <label for="conta">Bill</label>
+        <div class="input_dolar">
+          <input type="text" name="conta" id="conta" onchange="getValueConta()" placeholder="0">
+          <img src="images/icon-dollar.svg" alt="icon-dolar">
+        </div>
       <div class="porcents">
         <label for="porcent">Select Tip %</label>
         <div class="buttons">
@@ -51,13 +55,14 @@
         <input type="text" name="peoples" id="peoples" onchange="getNumberOfPeoples()" placeholder="0">
         <img src="images/icon-person.svg" alt="icon-people">
       </div>
+    </article>
       <div class="result">
         <div class="tip_amount">
           <div class="amount_person">
             <p>Tip Amount</p>
             <span>/ person</span>
           </div>
-          <h2 id="gorjeta_null">$0:00</h2>
+          <h2 id="gorjeta_null">$0.00</h2>
           <h2 id="gorjeta_person"></h2>
         </div>
         <div class="total">
@@ -65,7 +70,7 @@
             <p>Total</p>
             <span>/ person</span>
           </div>
-          <h2 id="result_null">$0:00</h2>
+          <h2 id="result_null">$0.00</h2>
           <h2 id="total_people"></h2>
         </div>
         <button class="btn_clear" onclick="reset()">Reset</button>
@@ -74,7 +79,7 @@
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/lucasmm56">Lucas Martins</a>.
   </footer>
   <script src="js/script.js"></script>
 </body>

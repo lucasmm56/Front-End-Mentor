@@ -25,7 +25,7 @@ body{
 
 main{
     display: flex;
-    height: 130vh;
+    height: 140vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -34,9 +34,25 @@ section{
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 800px;
     border-radius: 1em;
     background-color: var(--White);
     padding: 2em 2em;
+}
+
+.title_page{
+    margin: 2em;
+    width: 8em;
+    height: 6em;
+    word-break: break-all;
+}
+
+.title_page h1{
+    text-align: center;
+    color: var(--Very-dark-cyan);
+    font-size: 1.5em;
+    width: 100%;
+    letter-spacing: 0.5em;
 }
 
 input{
@@ -45,7 +61,7 @@ input{
 
 label{
     display: block;
-    color: var(--Very-dark-cyan);
+    color: var(--Grayish-cyan);
     margin: 0.2em 0;
 }
 
@@ -147,11 +163,45 @@ input[type=text]{
     text-transform: uppercase;
 }
 
+.btn_clear:hover, .porcent:hover{
+    background-color: var(--Light-grayish-cyan);
+    cursor: pointer;
+    color: var(--Very-dark-cyan);
+}
+
 .porcent:hover{
     cursor: pointer;
 }
 .porcent:focus{
     background-color: var(--Strong-cyan);
     color: var(--Very-dark-cyan);
+}
+
+@media screen and (min-width:500px) {
+    main{
+        height: 100vh;
+    }
+    section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 3em;
+    }
+    .result{
+        margin: 0;
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 2.5em;
+        grid-gap: 1em 1em;
+        padding: 0.5em 0;
+    }
+    #gorjeta_null, #gorjeta_person, #result_null, #total_people{
+        font-size: 2em;
+    }
+    .btn_clear{
+        margin-top: 5em;
+    }
+
 }
 
