@@ -176,6 +176,15 @@ input[type=text]{
     background-color: var(--Strong-cyan);
     color: var(--Very-dark-cyan);
 }
+.go-home{
+    margin: 2em 0;
+    color: var(--Very-dark-cyan);
+    border-radius: 0.5em;
+}
+.go-home:hover{
+    color: var(--Strong-cyan);
+}
+
 
 @media screen and (min-width:500px) {
     main{

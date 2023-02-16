@@ -138,6 +138,13 @@ h1:hover{
 .name_link:hover{
     color: var(--Cyan);
 }
+.home{
+    text-align: center;
+}
+
+.home .go-home{
+    color: white;
+}
 
 footer{
     margin: 1em 0;

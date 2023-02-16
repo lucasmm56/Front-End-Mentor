@@ -77,6 +77,10 @@ p{
  box-shadow: var(--Neon-Green) 0px 5px 15px 5px;
 }
 
+.go-home{
+    color: white;
+}
+
 footer{
     background-color: black;
     padding: 1em 0;

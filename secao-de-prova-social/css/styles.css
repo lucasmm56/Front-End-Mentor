@@ -96,6 +96,11 @@ main{
 .attribution{
     text-align: center;
 }
+
+.home{
+    text-align: center;
+    margin: 1.5em 0;
+}
 @media screen and (min-width:600px) {
     body{
         /* height: 100vh; */

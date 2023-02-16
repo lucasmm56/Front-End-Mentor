@@ -144,6 +144,9 @@ footer{
 .message__error{
     display: none;
 }
+.home{
+    text-align: center;
+}
 
 @media screen and (max-width:1180px) {
     .formulario{

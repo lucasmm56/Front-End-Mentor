@@ -137,6 +137,9 @@ section{
 .button:hover, .btn:hover{
     background-color: hsl(158, 74%, 13%);
 }
+.home{
+    text-align: center;
+}
 @media (max-width:414px) { 
     section{
         width: 100vw;

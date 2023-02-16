@@ -17,6 +17,7 @@ body{
 }
 main{
     height: 100vh;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,6 +131,10 @@ img{
 }
 .cancel:hover{
     color: hsl(224, 32%, 34%);
+}
+
+.home{
+    margin: 2em 0;
 }
 
 @media(max-width:414px){

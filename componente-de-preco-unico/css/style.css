@@ -108,6 +108,10 @@ li{
     list-style: none;
     font-weight: 400;
 }
+
+.home{
+    text-align: center;
+}
 footer{
     margin: 2em 1em;
 }

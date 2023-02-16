@@ -40,7 +40,7 @@ body{
 main{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -121,6 +121,13 @@ svg{
         height: auto;
         right: -60%;
     }
+}
+.home{
+    text-align: center;
+    margin-bottom: 3em;
+}
+.home .go-home{
+    color: black;
 }
 
 @media screen and (max-width:375px) {

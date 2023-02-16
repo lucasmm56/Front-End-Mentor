@@ -33,7 +33,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: center;
+    flex-direction: column;
 }
 section{
     width: 44em;
@@ -84,6 +84,15 @@ span{
 }
 .attribution{
     text-align: center;
+}
+
+.home{
+    text-align: center;
+    margin: 2em 0;
+}
+
+.go-home{
+    color: white;
 }
 
 @media screen and (max-width:670px) {
