@@ -61,3 +61,7 @@ li{
     padding: 1em 0;
     border-bottom: 0.1px solid black;
 }
+
+.home{
+    text-align: center;
+}
