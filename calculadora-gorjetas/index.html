@@ -9,17 +9,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -43,7 +32,7 @@
           <button class="porcent" onclick="sendPorcent(25)">25%</button>
           <button class="porcent" onclick="sendPorcent(50)">50%</button>
           <div class="input_custom">
-            <input class="custom" type="text" id="custom" placeholder="Custom" onchange="sendPorcent()">
+            <input class="custom" type="text" id="custom" placeholder="Custom" onkeyup="sendPorcent()">
           </div>
         </div>
       </div>
@@ -62,16 +51,14 @@
             <p>Tip Amount</p>
             <span>/ person</span>
           </div>
-          <h2 id="gorjeta_null">$0.00</h2>
-          <h2 id="gorjeta_person"></h2>
+          <h2 id="gorjeta_person">$0.00</h2>
         </div>
         <div class="total">
           <div class="total_person">
             <p>Total</p>
             <span>/ person</span>
           </div>
-          <h2 id="result_null">$0.00</h2>
-          <h2 id="total_people"></h2>
+          <h2 id="total_people">$0.00</h2>
         </div>
         <button class="btn_clear" onclick="reset()">Reset</button>
       </div>
@@ -84,5 +71,4 @@
   </footer>
   <script src="js/script.js"></script>
 </body>
-
 </html>

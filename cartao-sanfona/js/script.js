@@ -2,15 +2,6 @@ var allLi = document.querySelectorAll('li');
 var spans = document.querySelectorAll('span');
 var boleano = false;
 
-// // console.log(allLi);
-// allLi.forEach(function(e){
-//     e.addEventListener("click", myFunction);
-// });
-
-// function myFunction(e){
-//     console.log(e)
-// }
-
 allLi.addEventListener("click", openSpan)
 
 function openSpan() {
@@ -46,13 +37,3 @@ if (element.style.display === "none") {
 } else {
     element.style.display = "none";
 }
-
-
-// $("li").click(function() {
-//     alert(this.value)
-//     if ($("span").is(":visible")) {
-//       $("span").hide();
-//     } else {
-//       $("span").show();
-//     }
-//   });
