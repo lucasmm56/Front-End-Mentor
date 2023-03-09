@@ -27,28 +27,43 @@
 
 <body>
   <main>
-    <div class="img-mobile">
-      <img src="images/illustration-woman-online-mobile.svg" alt="woman-mobile">
-    </div>
+    <img src="images/illustration-woman-online-mobile.svg" alt="woman-mobile" class="img-mobile">
     <section>
-      <div class="img-mobile-bg">
-        <img src="images/bg-pattern-mobile.svg"  class="img_bg" alt="bg-woman">
+      <div class="box-absolute">
+        <img src="images/illustration-box-desktop.svg" alt="box-img" class="box-img">
       </div>
+      <div class="box-element">
+        <img src="images/illustration-woman-online-desktop.svg" alt="woman-desktop" class="img-desktop">
+      </div>
+      <img src="images/bg-pattern-mobile.svg" alt="imagem-bg" class="imagem-mobile-bg">
+      <article>
         <h1>FAQ</h1>
-      <ul>
-        <li onclick="openSpan(0)" value="0">How many team members can I invite?</li>
-        <span>You can invite up to 2 additional users on the Free plan. There is no limit on
-          team members for the Premium plan.</span>
-        <li value="1">What is the maximum file upload size?</li>
-        <span>No more than 2GB. All files in your account must fit your allotted storage space.</span>
-        <li value="2">How do I reset my password?</li>
-        <span>Click “Forgot password” from the login page or “Change password” from your profile page.
-          A reset link will be emailed to you.</span>
-        <li value="3">Can I cancel my subscription?</li>
-        <span>Yes! Send us a message and we’ll process your request no questions asked.</span>
-        <li  value="4">Do you provide additional support?</li>
-        <span>Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
-      </ul>
+        <ul>
+          <li onclick="expandir(this)" value="0">How many team members can I invite? <img
+              src="images/icon-arrow-down.svg" alt="icon-arrow" class="arrow"></li>
+          <span>You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.</span>
+          <hr>
+          <li onclick="expandir(this)" value="1">What is the maximum file upload size? <img
+              src="images/icon-arrow-down.svg" alt="icon-arrow" class="arrow"></li>
+          <span>No more than 2GB. All files in your account must fit your allotted storage space.</span>
+          <hr>
+          <li onclick="expandir(this)" value="2">How do I reset my password? <img src="images/icon-arrow-down.svg"
+              alt="icon-arrow" class="arrow"></li>
+          <span>Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.</span>
+          <hr>
+          <li onclick="expandir(this)" value="3">Can I cancel my subscription? <img src="images/icon-arrow-down.svg"
+              alt="icon-arrow" class="arrow"></li>
+          <span>Yes! Send us a message and we’ll process your request no questions asked.</span>
+          <hr>
+          <li onclick="expandir(this)" value="4">Do you provide additional support? <img
+              src="images/icon-arrow-down.svg" alt="icon-arrow" class="arrow"></li>
+          <span>Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
+          <hr>
+          <br>
+        </ul>
+      </article>
     </section>
   </main>
   <div class="home">

@@ -1,39 +1,37 @@
-var allLi = document.querySelectorAll('li');
 var spans = document.querySelectorAll('span');
-var boleano = false;
+var images = document.querySelectorAll('.arrow');
+var li = document.querySelectorAll('li');
 
-allLi.addEventListener("click", openSpan)
-
-function openSpan() {
-    for (let i = 0; i <= allLi.length; i++) {
-        var li = document.querySelector('li').value;
-        switch (li) {
-            case 0:
-                if (spans[li].style.display === 'none') {
-                    // allLi[li].style.borderBottom = '1 px solid red';
-                    spans[li].style.display = 'block';
-                } else {
-                    spans[li].style.display = 'none';
-                };
-                break;
-            case 1:
-                alterCss(1);
-                break;
-        }
+function expandir(value){
+    switch(value.value){
+        case 0:
+        alterCss(value.value);
+        break;
+        case 1:
+        alterCss(value.value);
+        break;
+        case 2:
+        alterCss(value.value);
+        break;
+        case 3:
+        alterCss(value.value);
+        break;
+        case 4:
+        alterCss(value.value);
+        break;
     }
 }
 
-function alterCss(li) {
-    if (spans[li].style.display === 'none') {
-        // allLi[li].style.borderBottom = '1 px solid red';
-        spans[li].style.display = 'block';
-    } else {
-        spans[li].style.display = 'none';
-    };
+function alterCss(value){
+    if(spans[value].style.display === 'block'){
+        spans[value].style.display = 'none';
+        images[value].style.transform = 'rotate(0deg)';
+        li[value].style.fontWeight = 'normal';
+    }else{
+        spans[value].style.display = 'block';
+        images[value].style.transform = 'rotate(180deg)';
+        li[value].style.fontWeight = 'bold';
+
+    }
 }
 
-if (element.style.display === "none") {
-    element.style.display = "block";
-} else {
-    element.style.display = "none";
-}

@@ -25,10 +25,12 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(var(--Soft-violet), var(--Soft-blue));    
+    background: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+    font-family: 'Kumbh Sans'; 
+    font-size: 12px;
 }
 main{
-    height: 100vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,24 +46,85 @@ section{
     background-color: white;
     border-radius: 1.5em;
 }
+.box-img, .img-desktop{
+    display: none;
+}
 
-li{
-   list-style: none; 
+h1{
+    text-align: center;
+    font-size: 3em;
+    padding-top: 0.5em;
+}
+article{
+    width: 100%;
+    padding: 2em 2em;
 }
 
 .img-mobile{
     width: 240px;
     position: relative;
-    top: 4.8em;
-}
-span{
-    display: none;
-}
-li{
-    padding: 1em 0;
-    border-bottom: 0.1px solid black;
+    top: 6em;
 }
 
+span{
+    display: none;
+    padding-bottom: 1em;
+    color: var(--Dark-grayish-blue);
+}
+li{
+    list-style: none;
+    padding: 1.5em 0;
+}
+li:hover{
+    cursor: pointer;
+    color: var(--Soft-red);
+}
+hr{
+    border-top: 1px solid var(--Light-grayish-blue);
+}
+.arrow{
+    float: right;
+}
 .home{
     text-align: center;
+}
+
+@media (min-width: 500px) {
+    main{
+        height: 100vh;
+    }
+    .img-mobile, .imagem-mobile-bg{
+        display: none;
+    }
+
+    .box-img, .img-desktop{
+        display: block;
+    }
+
+    article{
+        width: 50%;
+    }
+    .box-absolute{
+        width: 100%;
+        position: absolute;
+        top: 28em;
+        /* margin-left: 14%; */
+        /* left: 14%; */
+        z-index:11;
+    }
+    .box-element{
+        width: 50%;
+    }
+    .img-desktop{
+        position: relative;
+        right: 15%;
+        width: 100%;
+        z-index:10;
+    }
+    
+    section{
+        overflow: hidden;
+        max-width: 900px;
+        flex-direction: row;
+    }
 }
