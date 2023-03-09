@@ -185,6 +185,9 @@ input[type=text]{
     color: var(--Strong-cyan);
 }
 
+footer{
+    text-align: center;
+}
 
 @media screen and (min-width:500px) {
     main{
