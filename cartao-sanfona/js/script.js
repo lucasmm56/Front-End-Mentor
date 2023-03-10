@@ -1,14 +1,11 @@
 var images = document.querySelectorAll('.arrow');
-var summary = document.querySelectorAll('summary');
 var details = document.querySelectorAll('details');
 
 function alterCss(value, details){
     if(details[value].hasAttribute('open')){
         images[value].style.transform = 'rotate(0deg)';
-        summary[value].style.fontWeight = 'normal';
     }else{
         images[value].style.transform = 'rotate(180deg)';
-        summary[value].style.fontWeight = 'bold';
     }
 }
 
