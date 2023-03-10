@@ -115,7 +115,7 @@ hr{
         height: 100%;
         display: flex;
         align-items: center;
-        background-image: url('/cartao-sanfona/images/bg-pattern-desktop.svg');
+        background-image: url('../images/bg-pattern-desktop.svg');
         background-repeat: no-repeat;
         background-position: 115% 61%;
     }
