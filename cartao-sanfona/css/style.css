@@ -105,13 +105,17 @@ hr{
         width: 50%;
     }
     .box-absolute{
-        width: 100%;
+        width: 50%;
+    }
+
+    .box-img{
         position: absolute;
-        top: 28em;
-        /* margin-left: 14%; */
-        /* left: 14%; */
+        float: left;
+        top: 43.9%;
+        left: 7%;
         z-index:11;
     }
+
     .box-element{
         width: 50%;
     }
