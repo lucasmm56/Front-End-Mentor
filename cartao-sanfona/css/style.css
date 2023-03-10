@@ -54,6 +54,7 @@ h1{
     text-align: center;
     font-size: 3em;
     padding-top: 0.5em;
+    text-align: left;
 }
 article{
     width: 100%;
@@ -87,11 +88,16 @@ hr{
 }
 .home{
     text-align: center;
+    margin-bottom: 1em;
+}
+
+.home a{
+    color: var(--Light-grayish-blue);
 }
 
 @media (min-width: 500px) {
     main{
-        height: 100vh;
+        height: 96vh;
     }
     .img-mobile, .imagem-mobile-bg{
         display: none;
@@ -106,13 +112,19 @@ hr{
     }
     .box-absolute{
         width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-image: url('/cartao-sanfona/images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: 115% 61%;
     }
 
     .box-img{
         position: absolute;
         float: left;
-        top: 43.9%;
-        left: 7%;
+        top: 42%;
+        left: 14.3%;
         z-index:11;
     }
 
@@ -121,7 +133,7 @@ hr{
     }
     .img-desktop{
         position: relative;
-        right: 15%;
+        right: 17%;
         width: 100%;
         z-index:10;
     }
