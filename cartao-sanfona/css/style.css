@@ -99,6 +99,15 @@ hr{
     color: var(--Light-grayish-blue);
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
 @keyframes myMove {
     0% {
       transform: translateY(0);
