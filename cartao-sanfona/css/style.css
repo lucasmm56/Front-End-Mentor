@@ -90,17 +90,15 @@ hr{
     border-top: 1px solid var(--Light-grayish-blue);
 }
 
-.home{
-    text-align: center;
+.attribution .go-home{
     margin-bottom: 1em;
-}
-
-.home a{
     color: var(--Light-grayish-blue);
 }
 
 .attribution {
     font-size: 11px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
 
