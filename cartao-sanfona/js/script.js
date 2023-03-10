@@ -1,37 +1,33 @@
-var spans = document.querySelectorAll('span');
 var images = document.querySelectorAll('.arrow');
-var li = document.querySelectorAll('li');
+var summary = document.querySelectorAll('summary');
+var details = document.querySelectorAll('details');
 
-function expandir(value){
-    switch(value.value){
-        case 0:
-        alterCss(value.value);
-        break;
-        case 1:
-        alterCss(value.value);
-        break;
-        case 2:
-        alterCss(value.value);
-        break;
-        case 3:
-        alterCss(value.value);
-        break;
-        case 4:
-        alterCss(value.value);
-        break;
-    }
-}
-
-function alterCss(value){
-    if(spans[value].style.display === 'block'){
-        spans[value].style.display = 'none';
+function alterCss(value, details){
+    if(details[value].hasAttribute('open')){
         images[value].style.transform = 'rotate(0deg)';
-        li[value].style.fontWeight = 'normal';
+        summary[value].style.fontWeight = 'normal';
     }else{
-        spans[value].style.display = 'block';
         images[value].style.transform = 'rotate(180deg)';
-        li[value].style.fontWeight = 'bold';
-
+        summary[value].style.fontWeight = 'bold';
     }
 }
 
+function rotateImg(value){
+   switch(value){
+    case 0:
+        alterCss(value, details);
+    break;
+    case 1:
+        alterCss(value, details);
+    break;
+    case 2:
+        alterCss(value, details);
+    break;
+    case 3:
+        alterCss(value, details);
+    break;
+    case 4:
+        alterCss(value, details);
+    break;
+   }
+}

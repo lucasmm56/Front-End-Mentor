@@ -46,15 +46,14 @@ section{
     background-color: white;
     border-radius: 1.5em;
 }
-.box-img, .img-desktop{
+.box-absolute{
     display: none;
 }
 
-h1{
+h2{
     text-align: center;
     font-size: 3em;
     padding-top: 0.5em;
-    text-align: left;
 }
 article{
     width: 100%;
@@ -67,25 +66,25 @@ article{
     top: 6em;
 }
 
-span{
-    display: none;
+details p{
     padding-bottom: 1em;
     color: var(--Dark-grayish-blue);
 }
-li{
+summary{
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 1.5em 0;
 }
-li:hover{
+summary:hover{
     cursor: pointer;
     color: var(--Soft-red);
 }
 hr{
     border-top: 1px solid var(--Light-grayish-blue);
 }
-.arrow{
-    float: right;
-}
+
 .home{
     text-align: center;
     margin-bottom: 1em;
@@ -94,6 +93,18 @@ hr{
 .home a{
     color: var(--Light-grayish-blue);
 }
+
+@keyframes myMove {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
 @media (min-width: 500px) {
     main{
@@ -106,7 +117,9 @@ hr{
     .box-img, .img-desktop{
         display: block;
     }
-
+    h2{
+        text-align: left;
+    }
     article{
         width: 50%;
     }
@@ -121,6 +134,9 @@ hr{
     }
 
     .box-img{
+        animation-name: myMove;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
         position: absolute;
         float: left;
         top: 42%;
@@ -144,3 +160,8 @@ hr{
         flex-direction: row;
     }
 }
+
+@media(min-width:1350px){
+    
+}
+
