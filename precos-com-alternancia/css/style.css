@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Heebo:wght@100;400;500;600;700&family=Inter:wght@100;200;700;800&family=Karla:wght@400;700&family=Lexend+Deca:wght@100;400&family=Manrope:wght@200;300;500;600;700;800&family=Montserrat:wght@700&family=Outfit:wght@100;200;300;400;600&family=Roboto:wght@100&family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap');
+:root{
+
+    /* linear Gradient */
+
+    --Linear-Gradient: hsl(236, 72%, 79%); 
+    --Linear-Gradient2:hsl(237, 63%, 64%);
+
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    background-color: var(--Very-Light-Grayish-Blue);
+    background-image: url('/images/bg-top.svg');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 220% -2%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0 0 0 ;
+}
+main header h1{
+    color: var(--Grayish-Blue);
+}
+
+main form{
+    display: flex;
+    align-items: center;
+    padding-top: 1.5em ;
+}
+main form label{
+    color: var(--Light-Grayish-Blue);
+}
+main section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main  section article{
+    width: 90%;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 1.5em;
+    border-radius: 0.5em;
+    background-color: white;
+}
+#switch {
+    appearance: none;
+    width: 3.5em;
+    height: 2em;
+    background: var(--Linear-Gradient2);
+    border-radius: 2em;
+    position: relative;
+    margin: 2em 1em;
+    outline: none;
+    transition: all .2s;
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.2);
+    filter: brightness(100%);
+}
+    
+#switch::before {
+    content: '';
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0.2em;
+    left: 0.2em;
+    transition: all ease .3s;
+}
+    
+#switch:checked::before {
+    left: calc(100% - 1.7em);
+}
+#switch:hover{
+    filter: brightness(150%);
+}
+main section article p{
+    color: var(--Grayish-Blue);
+}
+main section h2{
+    display: none;
+}
+
+main section article h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    padding: 0.5em 0;
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
+}
+
+main section article h2 span{
+    font-size: 0.5em;
+}
+
+main section article ul li{
+    list-style: none;
+    padding: 1em 0;
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
+    color: var(--Grayish-Blue);
+}
+
+main section article button{
+    margin-top: 2em;
+    padding: 1em 0;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5em;
+    color: var(--Very-Light-Grayish-Blue);
+    background: linear-gradient(to right, var(--Linear-Gradient), var(--Linear-Gradient2));
+}
+
+main section article button:hover{
+    border: 1px solid var(--Linear-Gradient2);
+    background: var(--Very-Light-Grayish-Blue);
+    color: var(--Linear-Gradient2);
+}
+
+section article:nth-of-type(2) {
+    background: linear-gradient(var(--Linear-Gradient), var(--Linear-Gradient2));
+    color: var(--Very-Light-Grayish-Blue);
+}
+
+section article:nth-of-type(2) p, section article:nth-of-type(2) li{
+    color: var(--Very-Light-Grayish-Blue);
+}
+section article:nth-of-type(2) button{
+    background: var(--Very-Light-Grayish-Blue);
+    color: var(--Linear-Gradient2);
+}
+section article:nth-of-type(2) button:hover{
+    border: 1px solid var(--Very-Light-Grayish-Blue);
+    background: var(--Linear-Gradient2);
+    color: var(--Very-Light-Grayish-Blue);
+}
+
+main form label, main form input, main article button{
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .home{
+    padding: 2em 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 682px){
+    body{
+        background-image: url('/images/bg-top.svg'), url('/images/bg-bottom.svg');
+        background-position: right top, left bottom;
+        background-size: 25%, 25%;
+    }
+
+    main section{
+        max-width: 80rem;
+        flex-direction: row;
+        padding: 2em 2em;
+    }
+    section article:nth-of-type(2) {
+        padding: 3em 1.5em;
+    }
+}
+
+
