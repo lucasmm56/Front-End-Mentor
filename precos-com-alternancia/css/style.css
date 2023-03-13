@@ -20,7 +20,7 @@ body{
     font-family: 'Montserrat';
     font-size: 15px;
     background-color: var(--Very-Light-Grayish-Blue);
-    background-image: url('/images/bg-top.svg');
+    background-image: url('../images/bg-top.svg');
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: 220% -2%;
@@ -176,7 +176,7 @@ footer .home{
 
 @media (min-width: 682px){
     body{
-        background-image: url('/images/bg-top.svg'), url('/images/bg-bottom.svg');
+        background-image: url('../images/bg-top.svg'), url('../images/bg-bottom.svg');
         background-position: right top, left bottom;
         background-size: 25%, 25%;
     }
