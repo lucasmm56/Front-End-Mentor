@@ -18,7 +18,9 @@ body{
     font-size: 13px;
     font-family: 'Manrope';
     max-width: 1440px;
+    max-height: 100vh;
     background-color: var(--Light-Grayish-Blue);
+    margin: 0 auto;
 }
 
 main{
@@ -36,9 +38,6 @@ main section{
     justify-content: center;
 }
 
-/* main section picture{
-    border: none;
-} */
 main section img{
     width: 100%;
     height: 100%;
@@ -52,7 +51,9 @@ main section .title-page{
 
 main section article{
     background-color: white;
-    padding: 3em 2em;
+    padding: 3em 2em 0;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 }
 main section article h2{
     font-size: 1.3em;
@@ -68,6 +69,7 @@ main section article aside{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 1em 0;
 }
 main section article aside img{
     width: 4em;
@@ -83,8 +85,9 @@ main section article aside .icon-img{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
+    background-color: var(--Light-Grayish-Blue);
     border-radius: 50%;
 }
 main section article aside .icon-img img{
@@ -93,27 +96,86 @@ main section article aside .icon-img img{
 }
 
 main section article aside .icon-img button{
+    background-color: var(--Light-Grayish-Blue);
     border: none;
     border-radius: 50%;
-    background-color: white;
+}
+.otherone{
+    width: 100%;
 }
 .other{
     background-color: var(--Very-Dark-Grayish-Blue);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    height: 4em;
+    justify-content:space-around;
+    height: 6em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 }
 .other .icon-share{
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
 }
+.other .icon-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    background-color: var(--Grayish-Blue);
+    border-radius: 50%;
+}
+.other .icon-img button{
+    background-color: var(--Grayish-Blue);
+    border: none;
+    border-radius: 50%;
+}
+
 .other p{
     color: var(--Light-Grayish-Blue);
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
-.otherone{
+.otherone, .icon-desktop{
     display: none;
+}
+
+@media (min-width:760px){
+    main{
+        max-height: 100vh;
+    }
+    main section{
+        flex-direction: row;
+        max-width: 58em;
+        min-width: 58em;
+        height: 19rem;
+    }
+    main section article{
+        height: 100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0.5em;
+    }
+    main section img{
+        width: 40%;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.5em;
+    }
+    /* .icon-arrow{
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        top: 27rem;
+        transform: rotate(45deg);
+        background-color: var(--Very-Dark-Grayish-Blue);
+    } 
+
+    .otherone{
+        width: 15rem;
+        top: 22.8rem;
+        display: block;
+        position: absolute;
+    } */
+
 }

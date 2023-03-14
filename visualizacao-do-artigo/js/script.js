@@ -1,8 +1,6 @@
 var divshared = document.querySelector('.otherone');
 var divAside = document.querySelector('.aside');
 
-console.log(divshared);
-
 function shared(){
     if(divAside.style.display == 'none'){
         divAside.style.display = 'block';
