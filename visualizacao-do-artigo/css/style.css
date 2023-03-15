@@ -67,9 +67,16 @@ main section article p{
 main section article aside{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     padding: 1em 0;
+}
+main section article aside .michele-shared{
+    display: flex;
+    flex-direction: row;
+}
+
+main section article aside .michele-info{
+    padding: 0 1em;
 }
 main section article aside img{
     width: 4em;
@@ -112,6 +119,13 @@ main section article aside .icon-img button{
     height: 6em;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
+    padding: 0 2em;
+}
+.other .icons-center{
+    display: flex;
+    width: 8em;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .other .icon-share{
     width: 1.5em;
@@ -135,7 +149,8 @@ main section article aside .icon-img button{
 .other p{
     color: var(--Light-Grayish-Blue);
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.5em;
+
 }
 .otherone, .icon-desktop{
     display: none;
