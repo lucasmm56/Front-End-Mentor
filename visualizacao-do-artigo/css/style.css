@@ -177,6 +177,14 @@ main section article aside .icon-img button{
         border-top-right-radius: 0;
         border-bottom-left-radius: 0.5em;
     }
+    .icon-img{
+        position: relative;
+    }
+
+    .shared-desktop{
+        position: absolute;
+        top: -9em;
+    }
     /* .icon-arrow{
         position: absolute;
         width: 1.5rem;

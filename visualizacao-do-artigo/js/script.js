@@ -1,5 +1,5 @@
-var divshared = document.querySelector('.otherone');
-var divAside = document.querySelector('.aside');
+var divshared = document.querySelector('.shared-none');
+var divAside = document.querySelector('aside');
 
 function shared(){
     if(divAside.style.display == 'none'){
